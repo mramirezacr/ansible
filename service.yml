@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: Restart service
+      service: name=chronyd enabled=true state=started
